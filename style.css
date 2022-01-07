@@ -1,0 +1,82 @@
+#container{
+    border: solid 20px;
+    border-color: black;
+    border-radius: 30px;
+    background-color: white;
+    width: 215px;
+}
+
+.buttons{
+    background-color: black;
+    padding-top: 20px;
+}
+
+.buttonsRight{
+    background-color: orange;
+}
+
+.buttonsErase{
+    background-color: #9CAAAD;
+}
+
+#display{
+    border: solid;
+    border-radius: 10px 10px 0 0;
+    height: 110px;
+    width: 209px;
+    text-align: end;
+    background-color: #EFEFEF;
+    font-size: 20px;
+}
+
+#number1{
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+#operator, #number2{
+    padding-right: 5px;
+}
+
+#result{
+    margin-top: 10px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#number2{
+    padding-right: 5px;
+}
+
+tr{
+    background-color: white;
+}
+
+td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 15px;
+    border: solid;
+    font-weight: bold;
+    border-radius: 50px;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.topButtons{
+    background-color: #0497BB;
+}
+
+td:hover{
+    opacity: 70%;
+}
+
+td:active{
+    transform: translate(0px,2px);
+}

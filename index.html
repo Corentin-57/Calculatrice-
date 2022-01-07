@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="app.js"></script>
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div id="container">
+            <div id="display">
+                <div id="number1"></div>
+                <div id="operator"></div>
+                <div id="number2"></div>
+                <div id="result"></div>
+            </div>
+    <div class="buttons">
+        <table>
+            <tr>
+                <td class="topButtons" onclick="square()">x²</td>
+                <td class="topButtons" onclick="squareRoot()">&#8730;</td>
+                <td class="topButtons" onclick="cos()">Cos</td>
+                <td class="topButtons" onclick="tan()" >Tan</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td id="CE" class="buttonsErase" onclick="eraseAll()">CE</td>
+                <td id="C"  class="buttonsErase" onclick="eraseElement()">C</td>
+                <td id="back" class="buttonsErase" onclick="back()">&larr;</td>
+                <td id="divide" class="buttonsRight" onclick="GetDivide()">/</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <td id="seven" onclick="GetNumbers(7)">7</td>
+            <td id="eight" onclick="GetNumbers(8)">8</td>
+            <td id="nine" onclick="GetNumbers(9)">9</td>
+            <td class="buttonsRight" id="multiply" onclick="multiply()">*</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <td id="four" onclick="GetNumbers(4)">4</td>
+            <td id="five" onclick="GetNumbers(5)">5</td>
+            <td id="six" onclick="GetNumbers(6)">6</td>
+            <td class="buttonsRight" id="substraction" onclick="GetSubstraction()">-</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <td id="one" onclick="GetNumbers(1)">1</td>
+            <td id="two" onclick="GetNumbers(2)">2</td>
+            <td id="three"onclick="GetNumbers(3)">3</td>
+            <td class="buttonsRight" id="add" onclick="GetAdd('+')">+</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <td id="negative" onclick="addNegative()">+/-</td>
+            <td id="zero" onclick="GetNumbers(0)">0</td>
+            <td id="comma" onclick="GetComma()">,</td>
+            <td class="buttonsRight" id="equal" onclick="calculate()">=</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+</html>
