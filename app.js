@@ -32,7 +32,7 @@ function GetComma(){ //Mettre une virgule si aucune virgule
 
     if (number2 != ""){
         for(i=0; i< number2.length; i++){
-            if (number2[i] == ","){  //Cherche si virgule en place
+            if (number2[i] == "."){  //Cherche si virgule en place
                 commaNumber2 = true;
             }
         }
@@ -41,7 +41,7 @@ function GetComma(){ //Mettre une virgule si aucune virgule
         }
     }else{
         for(i=0; i< number1.length; i++){
-            if (number1[i] == ","){
+            if (number1[i] == "."){
                 commaNumber1 = true;
             }
         }
@@ -72,7 +72,9 @@ function back(){  //Bouton <- pour faire retour arrière supprimer dernier chiff
 }
 
 function eraseElement(){  //Bouton C pour effacer le dernier élément
-    if (document.getElementById("number2").innerHTML != ""){
+    if (document.getElementById("result").innerHTML != ""){
+        document.getElementById("result").innerHTML ="";
+    }else if(document.getElementById("number2").innerHTML != ""){
         document.getElementById("number2").innerHTML = "";
     }else if(document.getElementById("operator").innerHTML != ""){
         document.getElementById("operator").innerHTML = "";
